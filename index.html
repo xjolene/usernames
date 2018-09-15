@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<h1>Sample Question</h1>
+<input type='button' id='nextquestion' value='Next' />
+   <br>
+  <br>
+<div id="results"></div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script>
+var questionStack = [
+  "username1",
+"username2"];
+$('#nextquestion').click(function() {
+    $('#results').html(questionStack.pop());    
+});
+</script>
+</html>
